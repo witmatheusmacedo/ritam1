@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <!-- SEO básico -->
+  <title>Animais marinhos em extinção</title>
+  <meta name="description" content="[[RESUMO_CURTO]]" />
+
+  <!-- Bibliotecas -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.8.0/dist/tf.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+
+</head>
+<body>
+  <div class="peixes">
+        <img src="https://i.pinimg.com/originals/91/bb/ce/91bbce24cbe316f4afabe14ccb67ac61.png" class="fish fish1">
+        <img src="https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=204,height=204,fit=cover,f=auto/117509765d91fa66d75858808c063b96/peixe.png" class="fish fish2">
+        <img src="https://cdn-icons-png.freepik.com/256/16104/16104468.png" class="fish fish3">
+    </div>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header role="banner">
+    <div class="wrap">
+      <nav aria-label="Navegação principal">
+        <div class="brand" aria-label="Marca da página">
+          <span aria-hidden="true"></span>
+          <strong>Mar Profundo</strong>
+        </div>
+
+        <div class="nav-links" role="navigation">
+          <a href="#curiosidades">Curiosidades</a>
+          <a href="#fatos">Fatos</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#faq">FAQ</a>
+        </div>
+
+        <div class="controls">
+          <button id="toggleTheme" class="btn ghost" aria-pressed="false" aria-label="Alternar modo claro e escuro">🌙</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+ <main id="conteudo" class="wrap" role="main">
+    <!-- HERO -->
+    <section class="hero fade-in" aria-labelledby="titulo-hero">
+      <div>
+        <!-- TODO: Substituir o TEMA_DO_PROJETO -->
+        <h1 id="titulo-hero">Animais marinhos em extinção</h1>
+        <!-- TODO: Substituir o SLOGAN_IMPACTANTE -->
+        <h2>Aprenda aqui sobre a historia dos animais em extinção e curiosidades sobre eles</h2>
+        <!-- TODO: Substituir o RESUMO_CURTO -->
+        <p>Este site tem o intuito de ensinar e ajudar a consientizar as pessoas sobre como os animais entram em extinção e como evitar!</p>
+
+        <div class="actions" role="group" aria-label="Ações principais">
+          <!-- Botão obrigatório: Reconhecimento Facial -->
+          <button id="abrirIA" class="btn" aria-label="Iniciar reconhecimento facial">
+            Reconhecimento Facial
+          </button>
+
+          <!-- Botão obrigatório: Abrir Chatbot (também no topo) -->
+        </div>
+      </div>
+      <div class="imgwrap" aria-hidden="false">
+        <!-- TODO: Substituir a URL_IMAGEM_HERO -->
+        <img src="https://marsemfim.com.br/wp-content/uploads/2017/11/tartaruga-pente-extincao.jpg" alt="Imagem hero relacionada a [[TEMA_DO_PROJETO]]" />
+      </div>
+    </section>
+
+    <!-- CURIOSIDADES -->
+    <section id="curiosidades" aria-labelledby="titulo-curiosidades" class="fade-in">
+      <header>
+        <h2 id="titulo-curiosidades">Curiosidades</h2>
+        <p>Descobertas rápidas sobre o tema do fundo do mar.</p>
+      </header>
+      <ul class="facts-list" role="list">
+        <!-- TODO: Preencher de 3 a 5 curiosidades -->
+        <li><div class="text">Tartarugas marinhas apesar do desafio natural da sobrevivência de apenas um ou dois filhotes de mil, elas lutam contra a poluição plástica, que as intoxica e dificulta sua alimentação, e contra a pesca incidental.</li>
+        <li><div class="text"> Animais em extinção possuem características fascinantes, como o mico-leão-dourado ter sido um símbolo de esperança após a criação de uma reserva biológica, ou o urso-polar e o atum- rabilho -do-sul sofrerem com as consequências do aquecimento global e da pesca excessiva, respetivamente. A tartaruga-das-galápagos-de-pinta tornou-se um ícone da extinção, com o seu último indivíduo, George Solitário, a falecer em 2012, mostrando a fragilidade da vida animal. </div></li>
+        <li><div class="text">Golfinho-de-Irrawaddy Vive em rios e águas costeiras do sudeste da Ásia.Tem a cabeça arredondada, sem “bico” típico de outros golfinhos.Pode cooperar com pescadores para capturar peixes.
+</div></li>
+        <li><div class="text">Tartaruga-de-couro É a maior tartaruga marinha, podendo pesar até 700 kg. Possui casco flexível, diferente das outras espécies. Pode mergulhar a mais de 1.000 metros de profundidade.</div>
+<li><div class="text"> Tubarão-baleia
+Maior peixe do mundo, chegando a 18 metros.
+Inofensivo, alimenta-se por filtração de plâncton.
+Cada indivíduo tem manchas únicas, como impressões digitais.
+</div></li>
+        <li><div class="text"> Algumas curiosidades sobre animais em extinção incluem a longevidade do proteus, um anfíbio cego que pode viver mais de 100 anos e ficar 10 anos sem comer
+      </ul>
+    </section>
+
+    <!-- FATOS/CIÊNCIA -->
+    <section id="fatos" aria-labelledby="titulo-fatos" class="fade-in">
+      <header>
+        <h2 id="titulo-fatos">Fatos e Ciência</h2>
+        <p>Três pontos científicos para entender melhor.</p>
+      </header>
+      <div class="cards" role="list">
+        <!-- TODO: Preencher os cards com fatos -->
+        <article class="card" aria-label="Fato científico 1" role="listitem">
+          <h3> A perda de biodiversidade</h3>
+          <p>A perda de biodiversidade causa desequilíbrios ecológicos, como a proliferação de doenças e a diminuição da qualidade do ar, o que pode gerar consequências irreversíveis para a natureza e para a humanidade. </p>
+        </article>
+
+        <article class="card" aria-label="Fato científico 2" role="listitem">
+          <h3>Animais marinhos enfrentam a extinção </h3>
+          <p>Animais marinhos enfrentam a extinção devido à poluição (resíduos sólidos, químicos e plásticos), pesca predatória (captura incidental e pesca excessiva) e destruição de habitats</p>
+        </article>
+
+        <article class="card" aria-label="Fato científico 3" role="listitem">
+          <h3>Tubarão-baleia</h3>
+          <p>O tubarão-baleia, maior peixe do planeta, é inofensivo e vive de plâncton, com manchas únicas na pele e vida longa.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" aria-labelledby="titulo-galeria" class="fade-in">
+      <header>
+        <h2 id="titulo-galeria">Galeria</h2>
+        <p>Imagens relacionadas ao tema com pequenas legendas.</p>
+      </header>
+
+      <div class="gallery" role="list">
+        <!-- TODO: Adicionar de 3 a 6 imagens na galeria. Duplique/remova figuras conforme necessário. -->
+        <figure role="listitem">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUQc7AK1olTEub_j7hOvmCXQQbDkr0S_aNGlbuhG-zCx2bU8Svz_u6eDi8KfFgsf-eltUHqtldE3_WuGpuzNAhL6oZVtE2g_NIs9NHa8XQFJtUIEUrdvG83BkO2xiHgLLD4QB5XxRjqC1L/s1600/Megalodon+-+Herschel+Hoffmeyer.png" alt="Foto 1 relacionada a [[TEMA_DO_PROJETO]]" />
+          <figcaption>Megalodon: Tubarão extinto muito grande</figcaption>
+        </figure>
+        <figure role="listitem">
+          <img src=https://static.todamateria.com.br/upload/ta/rt/tartaruga-de-couro-og.jpg alt="Foto 2 relacionada a [[TEMA_DO_PROJETO]]" />
+          <figcaption>Tartaruga-de-couro: Tartaruga muito grande </figcaption>
+        </figure>
+        <figure role="listitem">
+          <img src="https://thumbs.dreamstime.com/b/curioso-golfinho-irrawaddy-nadando-debaixo-d-%C3%A1gua-num-claro-oceano-azul-uma-imagem-serena-captura-um-graciosamente-em-seu-371349607.jpg" alt="Foto 3 relacionada a [[TEMA_DO_PROJETO]]" />
+          <figcaption>Golfinho-de-Irrawaddy:Golfinho com cabeça grande</figcaption>
+        </figure>
+        <figure role="listitem">
+          <img src="https://www.infoescola.com/wp-content/uploads/2010/02/tubarao-baleia-71323384.jpg" alt="Foto 4 relacionada a [[TEMA_DO_PROJETO]]" />
+          <figcaption>Tubarão Baleia: Tubarão parecido com uma baleia com uma boca gigante</figcaption>
+        </figure>
+        <figure role="listitem">
+          <img src="https://cdn.interago.com.br/img/webp/w_0_q_8/5/mc/Novo%20cat%C3%A1logo/axolote/AXOLOTEFUNDO" alt="Foto 5 relacionada a [[TEMA_DO_PROJETO]]" />
+          <figcaption>Axolote: Bichinho fofo demais e pequeno, e esta em extinção</figcaption>
+        </figure>
+        <figure role="listitem">
+          <img src="https://equipamentoparapesca.com.br/wp-content/uploads/2025/07/peixe-palhaaco-1.webp " alt="Foto 6 relacionada a [[TEMA_DO_PROJETO]]" />
+          <figcaption>Peixe Palhaço: Peixe bonito, ele ficou famoso por causa do filme " Procurando o Nemo"</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" aria-labelledby="titulo-faq" class="fade-in">
+      <header>
+        <h2 id="titulo-faq">Perguntas Frequentes</h2>
+        <p>Respostas rápidas sobre o projeto e o tema.</p>
+      </header>
+
+      <div class="faq">
+        <!-- TODO: Ajustar perguntas/respostas conforme o tema -->
+        <details>
+          <summary>O Megalodon realmente existiu?</summary>
+          <p>Sim, ele existiu, mas a sua espécie foi extinta por golfinhos</p>
+        </details>
+        <details>
+          <summary>Quando o Megaladon foi extinto?</summary>
+          <p>O Megalodon foi extinto a mais de 3,6 milhões de anos atrás</p>
+        </details>
+        <details>
+          <summary>Qual é o maior animal extinto no mar?</summary>
+          <p>O Megalodon, o Livyatan  melvillei, o Leedsichthys problematicus e o Ichthyotitan severnensis.</p>
+        </details>
+        <details>
+          <summary>Por que tem lixo nos mares?</summary>
+          <p>O lixo está nos mares principalmente devido à atividades humanas em terra, como o descarte inadequado de resíduos urbanos e industriais, que chegam aos oceanos por rios, córregos e canais. Cerca de 80% do lixo marinho tem origem terrestre, sendo transportado pela água, enquanto aproximadamente 20% é gerado diretamente no ambiente marinho, por embarcações, plataformas de exploração e atividades de pesca. </a>.</p>
+        </details>
+        <details>
+          <summary>Qual a importância de haver uma lista oficial de espécies ameaçadas?</summary>
+          <p>Essas listas servem para identificar as espécies mais ameaçadas e o grau de risco que correm.</p>
+        </details>
+      </div>
+    </section>
+
+   <!-- LINHA HORIZONTAL - CAUSAS DA EXTINÇÃO DOS ANIMAIS MARINHOS -->
+<section id="linha-extincao-marinha" aria-labelledby="titulo-extincao-marinha" class="fade-in">
+
+  <style>
+    /* ===============================
+       CSS EXCLUSIVO PARA ESTA LINHA
+       =============================== */
+
+    #linha-extincao-marinha {
+      margin-top: 60px;
+      margin-bottom: 80px;
+      padding: 20px 0;
+    }
+
+    #linha-extincao-marinha header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .extincao-linha-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      position: relative;
+      overflow-x: auto;
+      padding-bottom: 30px;
+    }
+
+    /* Linha fina horizontal */
+    .extincao-linha-base {
+      position: absolute;
+      top: 85px; 
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: #0a2a43;
+      opacity: 0.25;
+      z-index: 1;
+    }
+
+    .extincao-item {
+      width: 220px;
+      min-width: 220px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Círculo com imagem */
+    .extincao-circulo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #0b3d5c;
+      margin: 0 auto 10px auto;
+      background: #fff;
+    }
+
+    .extincao-circulo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .extincao-titulo {
+      margin: 10px 0 6px 0;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .extincao-descricao {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .extincao-detalhes {
+      list-style: none;
+      padding: 0;
+      font-size: 13px;
+      line-height: 1.3;
+    }
+
+    .extincao-detalhes li::before {
+      content: "• ";
+      color: #0b3d5c;
+      font-weight: bold;
+    }
+
+    /* Scroll bonito no mobile */
+    .extincao-linha-container::-webkit-scrollbar {
+      height: 6px;
+    }
+    .extincao-linha-container::-webkit-scrollbar-thumb {
+      background: #0b3d5c;
+      border-radius: 4px;
+    }
+  </style>
+
+  <header>
+    <h2 id="titulo-extincao-marinha">Causas da Extinção dos Animais Marinhos</h2>
+    <p>
+      Veja, de forma visual, algumas das principais ameaças que afetam golfinhos, 
+      tartarugas, tubarões, peixes e toda a vida marinha.
+    </p>
+  </header>
+
+  <div class="extincao-linha-container" role="list">
+    <div class="extincao-linha-base"></div>
+
+    <!-- 1 -->
+    <article class="extincao-item" role="listitem">
+      <div class="extincao-circulo">
+        <img src="data:image/jpeg;base64,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" />
+      </div>
+      <h3 class="extincao-titulo">Poluição Plástica</h3>
+      <p class="extincao-descricao">Tartarugas e aves confundem plástico com comida.</p>
+      <ul class="extincao-detalhes">
+        <li>Ingestão de plástico</li>
+        <li>Redes abandonadas</li>
+        <li>Microplásticos no corpo</li>
+      </ul>
+    </article>
+
+    <!-- 2 -->
+    <article class="extincao-item" role="listitem">
+      <div class="extincao-circulo">
+        <img src="https://www.infoescola.com/wp-content/uploads/2010/02/tubarao-baleia-71323384.jpg" />
+      </div>
+      <h3 class="extincao-titulo">Pesca Predatória</h3>
+      <p class="extincao-descricao">Tubarões, tartarugas e golfinhos morrem como captura acidental.</p>
+      <ul class="extincao-detalhes">
+        <li>Bycatch</li>
+        <li>Estoques reduzidos</li>
+        <li>Impacto no ecossistema</li>
+      </ul>
+    </article>
+
+    <!-- 3 -->
+    <article class="extincao-item" role="listitem">
+      <div class="extincao-circulo">
+        <img src="https://thumbs.dreamstime.com/b/curioso-golfinho-irrawaddy-nadando-debaixo-d-%C3%A1gua-num-claro-oceano-azul-uma-imagem-serena-captura-um-graciosamente-em-seu-371349607.jpg" />
+      </div>
+      <h3 class="extincao-titulo">Aquecimento Global</h3>
+      <p class="extincao-descricao">Mudança de temperatura mata corais e altera rotas migratórias.</p>
+      <ul class="extincao-detalhes">
+        <li>Branqueamento dos corais</li>
+        <li>Perda de habitat</li>
+        <li>Menos alimento</li>
+      </ul>
+    </article>
+
+    <!-- 4 -->
+    <article class="extincao-item" role="listitem">
+      <div class="extincao-circulo">
+        <img src="https://marsemfim.com.br/wp-content/uploads/2017/11/tartaruga-pente-extincao.jpg" />
+      </div>
+      <h3 class="extincao-titulo">Destruição de Habitats</h3>
+      <p class="extincao-descricao">Manguezais e recifes são destruídos por obras e poluição.</p>
+      <ul class="extincao-detalhes">
+        <li>Menos abrigo</li>
+        <li>Perda de biodiversidade</li>
+        <li>Risco na reprodução</li>
+      </ul>
+    </article>
+
+    <!-- 5 -->
+    <article class="extincao-item" role="listitem">
+      <div class="extincao-circulo">
+        <img src="https://portalworldcruises.com/wp-content/uploads/2020/02/WhatsApp-Image-2020-02-18-at-04.45.31-768x576.jpeg" />
+      </div>
+      <h3 class="extincao-titulo">Derramamento de Óleo</h3>
+      <p class="extincao-descricao">Animais ficam intoxicados e ecossistemas inteiros são destruídos.</p>
+      <ul class="extincao-detalhes">
+        <li>Contaminação da água</li>
+        <li>Animais cobertos por óleo</li>
+        <li>Efeito prolongado</li>
+      </ul>
+    </article>
+
+    <!-- 6 -->
+    <article class="extincao-item" role="listitem">
+      <div class="extincao-circulo">
+        <img src="https://equipamentoparapesca.com.br/wp-content/uploads/2025/07/peixe-palhaaco-1.webp" />
+      </div>
+      <h3 class="extincao-titulo">Espécies Invasoras</h3>
+      <p class="extincao-descricao">Competem por alimento e espaço, afetando espécies nativas.</p>
+      <ul class="extincao-detalhes">
+        <li>Competição direta</li>
+        <li>Desequilíbrio ambiental</li>
+        <li>Queda de espécies nativas</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+
+    <!-- CTA FINAL -->
+    <section id="cta-final" aria-labelledby="titulo-cta" class="fade-in">
+      <header>
+        <h2 id="titulo-cta">Continue explorando</h2>
+        <p>Escolha um caminho para aprender ainda mais.</p>
+      </header>
+      <div class="cta" role="group" aria-label="Call to Action">
+        <a href="#fatos">Aprender mais</a>
+        <a href="#galeria">Ver imagens</a>
+        <a href="#creditos">Baixar material &amp; Fontes</a>
+      </div>
+    </section>
+
+    <!-- CRÉDITOS/FONTES -->
+    <section id="creditos" aria-labelledby="titulo-creditos" class="fade-in">
+      <header>
+        <h2 id="titulo-creditos">Créditos e Fontes</h2>
+        <p>Referências utilizadas neste projeto.</p>
+      </header>
+      <!-- TODO: Inserir links ou nomes das fontes -->
+      <article>
+        <p>GOOGLE - 
+          OPENAI - 
+          CHATGPT - 
+          SORA - 
+          CANVA - 
+          WIT - 
+          ANA FLAVIA - PABLO VICTOR - MIGUEL MIRANDA - PROF MATHEUS
+        </p>
+      </article>
+    </section>
+  </main>
+
+  
+  <!-- Painel do Chatbot (Aside fixo) -->
+  <aside id="chatPane" role="complementary" aria-label="Painel do chatbot" aria-hidden="true">
+    <div class="chat-header">
+      <strong>Chatbot Demonstrativo</strong>
+      <div>
+        <button id="closeChat" class="icon-btn" aria-label="Fechar chatbot">✖</button>
+      </div>
+    </div>
+    <div class="chat-body" id="chatHistory" aria-live="polite">
+      <!-- Placeholders de histórico -->
+      <div class="msg bot">Olá! Sou um protótipo de chatbot. Como posso ajudar sobre [[TEMA_DO_PROJETO]]?</div>
+      <div class="msg user">Quero saber curiosidades rápidas.</div>
+      <div class="msg bot">Veja a seção “Curiosidades” ou pergunte algo específico!</div>
+    </div>
+    <form class="chat-input" id="chatForm" aria-label="Entrada de mensagem do chatbot">
+      <input id="chatText" type="text" name="q" placeholder="Digite sua mensagem..." aria-label="Escreva sua mensagem" />
+      <button class="icon-btn" type="submit" aria-label="Enviar mensagem">➤</button>
+    </form>
+  </aside>
+
+  <footer class="wrap" role="contentinfo">
+    <p>&copy; <span id="ano"></span> | Projeto: [[TEMA_DO_PROJETO]] — <a href="#topo" id="backToTop">Voltar ao topo</a></p>
+  </footer>
+<script src="script.js"></script>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+<df-messenger
+  intent="WELCOME"
+  chat-title="ECOBOT"
+  agent-id="6c106d6c-eef7-41db-92b4-5bf82848937e"
+  language-code="pt-br">
+</df-messenger>
+
+<!-- Modal da câmera -->
+<div id="cameraModal" class="modal" aria-hidden="true" style="display:none;">
+  <div class="modal-content">
+    <button id="fecharModal" class="botao-fechar" title="Fechar">❌</button>
+    <h2 class="modal-title">Reconhecimento Facial</h2>
+    <div class="video-wrap">
+      <video id="video" autoplay muted playsinline></video>
+    </div>
+    <div class="controls">
+      <button id="tirarFoto" class="botao-foto" title="Tirar foto">📸</button>
+    </div>
+    <p id="modalStatus" class="modal-status">Aguardando...</p>
+    <canvas id="fotoCanvas" style="display:none;"></canvas>
+  </div>
+</div>
+
+</body>
+</html>
+
